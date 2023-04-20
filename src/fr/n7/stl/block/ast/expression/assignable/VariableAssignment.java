@@ -76,7 +76,7 @@ public class VariableAssignment extends AbstractIdentifier implements Assignable
 	}
 
     public Declaration getDeclaration() {
-        return null;
+        return this.declaration;
     }
 
 }
