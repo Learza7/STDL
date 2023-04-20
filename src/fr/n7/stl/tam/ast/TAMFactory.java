@@ -56,7 +56,7 @@ public interface TAMFactory {
 	 * @param _offset Offset for the address whose value is loaded on the stack.
 	 * @return A TAM address Load instruction AST node.
 	 */
-	public TAMInstruction createLoadA(int register, int _offset);
+	public TAMInstruction createLoadA(Register _register, int _offset);
 	
 	/**
 	 * Build a TAM address Load address instruction AST node whose execution 

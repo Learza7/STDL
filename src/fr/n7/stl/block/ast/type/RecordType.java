@@ -12,6 +12,7 @@ import fr.n7.stl.block.ast.scope.Declaration;
 import fr.n7.stl.block.ast.scope.HierarchicalScope;
 import fr.n7.stl.block.ast.scope.Scope;
 import fr.n7.stl.block.ast.type.declaration.FieldDeclaration;
+import fr.n7.stl.tam.ast.Register;
 
 /**
  * Implementation of the Abstract Syntax Tree node for a record type.
@@ -214,7 +215,7 @@ public class RecordType implements Type, Declaration, Scope<FieldDeclaration> {
 		return this.fields;
 	}
 	@Override
-	public int getRegister() {
+	public Register getRegister() {
 		// TODO Auto-generated method stub
 		throw new UnsupportedOperationException("Unimplemented method 'getRegister'");
 	}

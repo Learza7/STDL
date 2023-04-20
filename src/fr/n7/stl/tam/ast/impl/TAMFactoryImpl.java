@@ -317,10 +317,6 @@ public class TAMFactoryImpl implements TAMFactory {
 		return labelNumber;
 	}
 
-	@Override
-	public TAMInstruction createLoadA(int register, int _offset) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'createLoadA'");
-	}
+	
 
 }

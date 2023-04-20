@@ -10,6 +10,7 @@ import fr.n7.stl.block.ast.scope.HierarchicalScope;
 import fr.n7.stl.block.ast.type.PointerType;
 import fr.n7.stl.block.ast.type.Type;
 import fr.n7.stl.tam.ast.Fragment;
+import fr.n7.stl.tam.ast.Register;
 import fr.n7.stl.tam.ast.TAMFactory;
 
 /**
@@ -58,7 +59,7 @@ public class AddressAccess implements AccessibleExpression {
 		
 		VariableAssignment variableAssignment = (VariableAssignment) this.assignable;
 		Declaration declaration = variableAssignment.getDeclaration();
-		int register = declaration.getRegister();
+		Register register = declaration.getRegister();
 		int offset = declaration.getOffset();
 		_result.add(_factory.createLoadA(register, offset));
 		

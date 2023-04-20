@@ -1,86 +1,167 @@
 test {
 
-	const boolean constantmlkjmlkj = 3;
+	// Déclaration d'une constante booléenne
+	const bool CONSTANT_BOOL = true;
 	
-	// int a;
-
+	// Déclaration de variables entières
 	int i = 1;
 	int j = i;
-	boolean a = true;
+	
+	// Déclaration d'une variable booléenne
+	bool a = true;
+	
+	// Opération d'addition entre une variable booléenne et une variable entière
+	// Le résultat est automatiquement converti en entier
 	int z = a + i;
+	
+	// Réaffectation d'une variable existante
 	z = a + i;
+	
+	// Opération de négation sur une variable entière
 	int ee = -j;
+	
+	// Opération de concaténation entre une variable entière et une variable booléenne
+	// Le résultat est automatiquement converti en chaîne de caractères
 	print i+a;
+	
+	// Opération de multiplication entre deux variables
 	int c = a * j;
+	
+	// Opération de soustraction entre deux variables
 	int d = a - j;
+	
+	// Opération de division entre deux variables
 	int e = a / j;
+	
+	// Déclaration d'une variable entière avec une valeur initiale
 	int b = 1;
 	
-	int nullValue = null;
+	// Déclaration d'une variable entière initialisée à null
+	int NULL_VALUE = null;
 		
-	int lesseq = a <= 12;
-	int zazeazeh = a >= 12;
-	int zazeazej = a < 12;
-	int zazeazeloj = a > 12;
-	int zazekkazeloj = a == 12;
-	int zaffzeazeloj = a != 12;
+	// Opérateurs de comparaison et d'égalité
+	bool lessEq = a <= 12;
+	bool greaterEq = a >= 12;
+	bool less = a < 12;
+	bool greater = a > 12;
+	bool equal = a == 12;
+	bool notEqual = a != 12;
 
-
-	int kaz = a || b;
-	int and = a && b;
+	// Opérateurs logiques
+	bool OR = a || b;
+	bool AND = a && b;
 	
+	// Opérateur modulo
 	int modulo = b % c;
 	
-	int oppo = !b;
+	// Opérateur de négation logique
+	bool oppo = !b;
 	
+	// Opérateur d'adressage
 	int addr = &a;
 	
+	// Opérateur de déréférencement
 	int access = *a;
 	
+	// Déclaration d'un tuple
 	<int, int> tuple = <3, 4>;
+	
+	// Récupération du premier élément du tuple
 	int first = fst tuple;
+	
+	// Récupération du deuxième élément du tuple
 	int second = snd tuple;
 	
-	int tab = 9;
-	int arrayAccess = tab[0];
+	// Déclaration d'un tableau
+	// int[] tab = new int[10];
 	
-	/* struct structure {
-		int ident;
-	} */
+	// Accès à un élément du tableau
+	// int arrayAccess = tab[0];
 	
-	int field = b.ident;
+	// Déclaration d'une structure
+	struct MyStruct {
+		int id;
+	}
 	
-	// ( a );
+	// Accès à un champ d'une structure
+	int field = b.id;
 	
-	// int casting = (Int) b;	
+	// Opérateur de casting
+	// int casting = (int) b;	
 	
-	// casting atomique
-	
-	/** {
+	// Bloc de code
+	/* {
 		int bloc1 = 3;
 		int bloc2 = 4;
-	} **/
+	} */
 	
-	
+	// Opérateur ternaire
 	int g = a ? b : c;
 	
+	// Appel de fonction avec des paramètres
 	// int functionCallParams = func (a, b);
 	
+	// Appel de fonction sans paramètres
 	// int functionCall = func();
 	
-	int arrayAllocation = new int[3];
+	// Allocation d'un tableau dynamique
+	// int[] arrayAllocation = new int[3];
 	
-	int pointerAllocation = new Integer();
+	// Allocation d'un objet de type Integer
+	Integer pointerAllocation = new Integer();
 		
-	if (b) {
-		a = 3;
-	}
-	else {
-		b = 4;
+	// Structure conditionnelle
+	if (a) {
+		// Traitement si la condition est vraie
+	} else if (b) {
+		// Traitement si la condition est fausse et que la condition b est vraie
+	} else {
+		// Traitement si toutes les conditions précédentes sont fausses
 	}
 	
-	return a;
-		
+	// Boucle for
+	for (int k = 0; k < 10; k++) {
+		// Traitement à répéter
+	}
+	
+	// Boucle while
+	while (a) {
+		// Traitement à répéter tant que la condition est vraie
+	}
+	
+	// Boucle do-while
+	do {
+		// Traitement à répéter au moins une fois, puis tant que la condition est vraie
+	} while (a);
+	
+	// Switch case
+	switch (a) {
+		case 1:
+			// Traitement si a vaut 1
+			break;
+		case 2:
+			// Traitement si a vaut 2
+			break;
+		default:
+			// Traitement par défaut si a ne vaut ni 1 ni 2
+			break;
+	}
+	
+	// Fonction avec paramètres et valeur de retour
+	int sum(int x, int y) {
+		return x + y;
+	}
+	
+	// Appel de la fonction sum
+	int result = sum(3, 4);
+	
+	// Fonction sans paramètre et sans valeur de retour
+	void displayHello() {
+		print "Hello!";
+	}
+	
+	// Appel de la fonction displayHello
+	displayHello();
 	
 
 }

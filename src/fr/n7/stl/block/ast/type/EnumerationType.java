@@ -9,6 +9,7 @@ import java.util.List;
 import fr.n7.stl.block.ast.scope.Declaration;
 import fr.n7.stl.block.ast.scope.HierarchicalScope;
 import fr.n7.stl.block.ast.type.declaration.LabelDeclaration;
+import fr.n7.stl.tam.ast.Register;
 
 /**
  * @author Marc Pantel
@@ -122,7 +123,7 @@ public class EnumerationType implements Type, Declaration {
 	}
 
 	@Override
-	public int getRegister() {
+	public Register getRegister() {
 		// TODO Auto-generated method stub
 		throw new UnsupportedOperationException("Unimplemented method 'getRegister'");
 	}

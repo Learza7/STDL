@@ -125,15 +125,17 @@ public class ConstantDeclaration implements Instruction, Declaration {
 	}
 
 	@Override
-	public int getRegister() {
+	public Register getRegister() {
 		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'getRegister'");
+		return null;
 	}
 
 	@Override
 	public int getOffset() {
 		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'getOffset'");
+		return 0;
 	}
+
+	
 
 }
